@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raushan Kumar | Full-Stack Web Developer & DevOps Engineer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/deco-color/48/portfolio.png">
+    <!-- Spline 3D Viewer -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.51/build/spline-viewer.js"></script>
+    <style>
+        /* CSS-ONLY Replacement for Typewriter */
+        .typewriter-text {
+            border-right: 3px solid var(--primary-color);
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: var(--primary-color);
+            }
+        }
+
+        /* Pure CSS reveal on scroll (Fallback for no JS) */
+        .reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Full-page Vanta.js Background -->
+    <div id="vanta-bg" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -10;"></div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <span class="gradient-text">RK.</span>Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-uppercase fs-6 px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase fs-6 px-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase fs-6 px-3" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase fs-6 px-3" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase fs-6 px-3" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase fs-6 px-3" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-custom btn-primary-custom btn-sm mt-2 mt-lg-0"
+                            href="#contact">Hire Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h1 class="display-2 fw-bold mb-4">I'm <span class="gradient-text">Raushan Kumar</span></h1>
+                    <h2 class="h3 mb-4">
+                        <span class="typewriter-text text-primary">Full-Stack Web Developer & DevOps</span>
+                    </h2>
+                    <p class="lead text-muted mb-5 pe-lg-5 fs-5">
+                        Building seamless digital experiences and robust infrastructure. Specialized in creating
+                        high-performance Full-Stack applications that users love.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#projects" class="btn btn-custom btn-primary-custom">View My Work</a>
+                        <a href="#contact" class="btn btn-custom btn-outline-custom">Let's Talk</a>
+                    </div>
+                    <div class="social-links mt-5 d-flex gap-4 fs-4">
+                        <a href="https://github.com/raushan165" target="_blank"
+                            class="text-white opacity-75 hover-primary"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/raushan-kumar-v08/" target="_blank"
+                            class="text-white opacity-75 hover-primary"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/Raushan63401724" target="_blank"
+                            class="text-white opacity-75 hover-primary"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="hero-img-container text-center">
+                        <div class="hero-shape-blob"></div>
+                        <img src="Raushan.jpeg" alt="Raushan Kumar"
+                            class="img-fluid rounded-4 border border-1 border-secondary shadow-2xl main-profile-img"
+                            style="width: 400px; height: 500px; object-fit: cover; background: #1e293b;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="glass-card p-2 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop"
+                            alt="Workspace" class="img-fluid rounded-4 shadow-lg hover-scale"
+                            style="min-height: 400px; width: 100%; object-fit: cover; background: #1e293b;">
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <h2 class="display-5 fw-bold mb-4">About <span class="gradient-text">Me</span></h2>
+                    <p class="text-muted mb-4 fs-5">
+                        I am an aspiring Full-Stack Web Developer with DevOps currently pursuing my <strong>B.Tech at Lovely
+                        Professional University (LPU)</strong>. I'm in my <strong>6th Semester (3rd Year)</strong>, maintaining a <strong>7.4
+                        CGPA</strong> while building real-world solutions.
+                        I bridge the gap between robust infrastructure, complex backend logic, and elegant frontend design.
+                    </p>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <div class="p-3 glass-card text-center h-100">
+                                <i class="fas fa-university text-primary mb-2 fs-4"></i>
+                                <h6 class="text-white mb-1">LPU</h6>
+                                <p class="small text-muted mb-0">B.Tech (CSE/IT)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 glass-card text-center h-100">
+                                <i class="fas fa-book-open text-primary mb-2 fs-4"></i>
+                                <h6 class="text-white mb-1">6th Sem</h6>
+                                <p class="small text-muted mb-0">3rd Year Student</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 glass-card text-center h-100">
+                                <i class="fas fa-graduation-cap text-primary mb-2 fs-4"></i>
+                                <h6 class="text-white mb-1">7.4 CGPA</h6>
+                                <p class="small text-muted mb-0">Current Standing</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mb-5">
+                        <div class="col-6 col-md-6">
+                            <div class="p-3 glass-card text-center highlight-on-hover">
+                                <i class="fas fa-project-diagram text-primary mb-2 fs-4"></i>
+                                <h3 class="fw-bold text-primary mb-1">04+</h3>
+                                <p class="small text-muted mb-0">Projects Built</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <div class="p-3 glass-card text-center highlight-on-hover">
+                                <i class="fas fa-certificate text-primary mb-2 fs-4"></i>
+                                <h3 class="fw-bold text-primary mb-1">03+</h3>
+                                <p class="small text-muted mb-0">Certifications</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <a href="#contact" class="btn btn-custom btn-primary-custom">Hire Me</a>
+                        <a href="https://drive.google.com/file/d/1u5Anhjmk-iEcmSHl_quDCx4faHCowfKh/view?usp=sharing"
+                            target="_blank" class="btn btn-custom btn-outline-custom">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">My <span class="gradient-text">Skills</span></h2>
+                <p class="text-muted">Tools and technologies I've mastered over the years</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card skill-card tilt-card h-100 p-4">
+                        <i class="fas fa-layer-group skill-icon"></i>
+                        <h4 class="mb-4 text-white">Frontend</h4>
+                        <div class="d-flex flex-wrap gap-2 justify-content-center">
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">Bootstrap 5</span>
+                            <span class="badge">React.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card skill-card tilt-card h-100 p-4">
+                        <i class="fas fa-server skill-icon"></i>
+                        <h4 class="mb-4 text-white">Backend</h4>
+                        <div class="d-flex flex-wrap gap-2 justify-content-center">
+                            <span class="badge">Node.js</span>
+                            <span class="badge">Express</span>
+                            <span class="badge">MongoDB</span>
+                            <span class="badge">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="glass-card skill-card tilt-card h-100 p-4">
+                        <i class="fas fa-users skill-icon"></i>
+                        <h4 class="mb-4 text-white">Soft Skills</h4>
+                        <div class="d-flex flex-wrap gap-2 justify-content-center">
+                            <span class="badge">Team Leader</span>
+                            <span class="badge">Problem Solving</span>
+                            <span class="badge">Creative</span>
+                            <span class="badge">Communication</span>
+                            <span class="badge">Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Recent <span class="gradient-text">Projects</span></h2>
+                <p class="text-muted">A showcase of my recent work</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1: Margdarsak -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="glass-card project-card tilt-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop"
+                                alt="Margdarsak" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/AdwaitPatel/Margdarshak" target="_blank"
+                                    class="btn btn-primary-custom btn-custom btn-sm mx-2">GitHub Code</a>
+                                <a href="https://margdarshak-five.vercel.app/" target="_blank"
+                                    class="btn btn-primary-custom btn-custom btn-sm mx-2">Live Link</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold text-white">Margdarsak</h5>
+                            <p class="small text-muted mb-3">A comprehensive platform aimed at providing guidance and mentorship for users.</p>
+                            <div class="d-flex gap-2">
+                                <span class="small text-primary fw-bold">#WebDev</span>
+                                <span class="small text-primary fw-bold">#Platform</span>
+                                <span class="small text-primary fw-bold">#FullStack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: UniGather -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="glass-card project-card tilt-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop"
+                                alt="UniGather" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/raushan165/ADMISSION-SATHI" target="_blank"
+                                    class="btn btn-primary-custom btn-custom btn-sm mx-2">GitHub Code</a>
+                                <a href="https://admissionsathi.org/" target="_blank"
+                                    class="btn btn-primary-custom btn-custom btn-sm mx-2">Live Link</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold text-white">Admission Sathi</h5>
+                            <p class="small text-muted mb-3">A Platform to help students to get admission in colleges
+                             by providing them with the best possible guidance and resources.</p>
+                            <div class="d-flex gap-2">
+                                <span class="small text-primary fw-bold">#University</span>
+                                <span class="small text-primary fw-bold">#Admission</span>
+                                <span class="small text-primary fw-bold">#WebDev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: RealTime Process Monitor -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glass-card project-card tilt-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop"
+                                alt="RealTime Process Monitor" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/raushan165/Taskpilot" target="_blank"
+                                    class="btn btn-primary-custom btn-custom btn-sm mx-2">GitHub Code</a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold text-white">Taskpilot</h5>
+                            <p class="small text-muted mb-3">A Daily Task Management Platform. Where you can manage your daily tasks and plan your day and you can also track your progress in graph form.</p>
+                            <div class="d-flex gap-2">
+                                <span class="small text-primary fw-bold">#Task</span>
+                                <span class="small text-primary fw-bold">#Management</span>
+                                <span class="small text-primary fw-bold">#WebDev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">My <span class="gradient-text">Certificates</span></h2>
+                <p class="text-muted">A showcase of my professional certifications and achievements</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Certificate 1 -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="glass-card project-card tilt-card">
+                        <div class="project-img-wrapper" style="height: 220px;">
+                            <img src="cloud.png"
+                                alt="Cloud Computing by NPTEL" class="project-img" style="object-fit: cover;">
+                            <div class="project-overlay">
+                                <a href="https://drive.google.com/file/d/1koetK07Nh_JzXH8ZVAkQm9FVY1TVBsZU/view" target="_blank"
+                                    class="btn btn-primary-custom btn-custom btn-sm mx-2">View Credential</a>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h5 class="fw-bold text-white mb-2">Cloud Computing</h5>
+                            <p class="small text-muted mb-0">Issued by: NPTEL</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="glass-card project-card tilt-card">
+                        <div class="project-img-wrapper" style="height: 220px;">
+                            <img src="MERN.png"
+                                alt="MERN Stack by W3Grades" class="project-img" style="object-fit: cover;">
+                            <div class="project-overlay">
+                                <a href="https://drive.google.com/file/d/17sPjDE7F-dvp2zmJ7QubwR0Ny2Wys5G1/view?usp=drive_link" target="_blank"
+                                    class="btn btn-primary-custom btn-custom btn-sm mx-2">View Credential</a>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h5 class="fw-bold text-white mb-2">MERN Stack</h5>
+                            <p class="small text-muted mb-0">Issued by: W3Grades</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certificate 3 -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glass-card project-card tilt-card">
+                        <div class="project-img-wrapper" style="height: 220px;">
+                            <img src="Prompt.png"
+                                alt="Prompt Engineering by Infosys" class="project-img" style="object-fit: cover;">
+                            <div class="project-overlay">
+                                <a href="https://drive.google.com/file/d/1aOf9vyMNC4zrgKTZgLxzBo1uN40LII-7/view?usp=sharing" target="_blank"
+                                    class="btn btn-primary-custom btn-custom btn-sm mx-2">View Credential</a>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h5 class="fw-bold text-white mb-2">Prompt Engineering</h5>
+                            <p class="small text-muted mb-0">Issued by: Infosys</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certificate 4 -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="glass-card project-card tilt-card">
+                        <div class="project-img-wrapper" style="height: 220px;">
+                            <img src="Gen-AI.png"
+                                alt="Generative AI Apps & Solutions by Infosys" class="project-img" style="object-fit: cover;">
+                            <div class="project-overlay">
+                                <a href="https://drive.google.com/file/d/1bf21v3DIsKr1E22cPCBTbSdcvP_sgFlY/view?usp=sharing" target="_blank"
+                                    class="btn btn-primary-custom btn-custom btn-sm mx-2">View Credential</a>
+                            </div>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h5 class="fw-bold text-white mb-2" style="font-size: 1rem;">Generative AI Apps & Solutions</h5>
+                            <p class="small text-muted mb-0">Issued by: Infosys</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">Get in <span class="gradient-text">Touch</span></h2>
+                    <p class="text-muted mb-5 fs-5">Have a project in mind? Let's talk about how I can help you build
+                        something amazing.</p>
+                    <div class="d-flex mb-4 highlight-on-hover">
+                        <div class="me-4 text-primary fs-3"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h5 class="text-white">Email</h5>
+                            <p class="text-muted mb-0">raushankumar261186@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4 highlight-on-hover">
+                        <div class="me-4 text-primary fs-3"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h5 class="text-white">Phone</h5>
+                            <p class="text-muted mb-0">+91 8789373494</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="glass-card p-4 p-md-5">
+                        <form class="contact-form">
+                            <div class="row g-4">
+                                <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name"
+                                        required></div>
+                                <div class="col-md-6"><input type="email" class="form-control" placeholder="Your Email"
+                                        required></div>
+                                <div class="col-12"><textarea class="form-control" rows="5" placeholder="Your Message"
+                                        required></textarea></div>
+                                <div class="col-12"><button type="submit"
+                                        class="btn btn-custom btn-primary-custom w-100 py-3">Send Message</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 border-top border-secondary border-opacity-10 text-center">
+        <div class="container">
+            <h3 class="fw-bold mb-4"><span class="gradient-text">RK.</span>Portfolio</h3>
+            <div class="d-flex justify-content-center gap-4 mb-4 fs-4">
+                <a href="https://github.com/raushan165" target="_blank" class="text-muted hover-primary"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/raushan-kumar-v08/" target="_blank"
+                    class="text-muted hover-primary"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/Raushan63401724" target="_blank" class="text-muted hover-primary"><i
+                        class="fab fa-x-twitter"></i></a>
+            </div>
+            <p class="text-muted mb-0">&copy; 2024 Raushan Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Three.js and Vanta.js for 3D Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <!-- Vanilla-Tilt.js for 3D Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Initialize Vanta.js 3D Background
+        const vantaEffect = VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x38bdf8,
+            backgroundColor: 0x020617,
+            points: 15.00,
+            maxDistance: 25.00,
+            spacing: 20.00
+        });
+
+        // Initialize Vanilla-Tilt on designated cards
+        VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2
+        });
+    </script>
+</body>
+
+</html>
